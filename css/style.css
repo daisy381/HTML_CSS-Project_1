@@ -10,6 +10,17 @@ html, body{
     box-sizing: inherit;
 }
 
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+h2{
+    margin: 0;
+    margin-block-start:0;
+    margin-block-end:0;
+}
+
 body{
     font-family:'Lato';
     font-style: normal;
@@ -265,7 +276,7 @@ li {
     background-color: #FFFFFF;
     top:0;
     left:0;
-    transform: translateY(-110%);
+    transform: translateY(-100%);
     background-color: #FFFFFF;
 }
 
@@ -351,7 +362,8 @@ li {
 .places_cards{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-    grid-gap: 10px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
 }
 
 .places_card{
@@ -427,7 +439,8 @@ li {
 .tours_tour{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-gap:0 108px;
+    grid-column-gap:108px;
+    grid-row-gap:0px;
     align-items: center;
     margin-bottom: 77px;
 }
@@ -477,7 +490,8 @@ li {
 .top_cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap:57px;
+    grid-column-gap:57px;
+    grid-row-gap: 57px;
 }
 
 .top_title{
@@ -617,6 +631,58 @@ li {
 
 
 /*Media start*/
+
+@media screen and (max-width: 960px){
+    .search-form_field{
+        margin-bottom: 25px;
+    }
+
+    .benefits{
+        margin-bottom: 75px;
+    }
+    .benefits_card{
+        margin-bottom: 70px;
+    }
+
+    .benefits_cards{
+        padding: 0 15px;
+        grid-column-gap: 35px;
+    }
+
+    .benefits_card_thumb{
+        padding-top: 10px;
+    }
+
+    .benefits_title{
+        padding: 65px 15px;
+    }
+
+    .benefits_wrap{
+        box-shadow: none;
+    }
+
+    .places_card_size_lg{
+        grid-column: span 6;
+    }
+
+    .places_card_size_sm{
+        grid-column: span 6;
+    }
+
+    .tours_tour{
+        grid-column-gap: 35px;
+    }
+
+    .tour_info{
+        padding-left: 0;
+        margin-left: 0;
+    }
+
+    .tour_title{
+        margin-bottom: 40px;
+    }
+
+}
 
 @media screen and (max-width: 766px){
     .header_burger{
